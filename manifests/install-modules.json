@@ -553,7 +553,6 @@
         "skills/finance-billing-ops",
         "skills/github-ops",
         "skills/google-workspace-ops",
-        "skills/home-assistant-best-practices",
         "skills/jira-integration",
         "skills/knowledge-ops",
         "skills/messages-ops",
@@ -642,7 +641,7 @@
     {
       "id": "ito-compute",
       "kind": "skills",
-      "description": "Authenticated It\u00f4 GPU inventory, RFQ, status, device revocation, and explicitly gated node-qualification workflows through the separately installed canonical CLI.",
+      "description": "Authenticated Itô GPU inventory, RFQ, status, device revocation, and explicitly gated node-qualification workflows through the separately installed canonical CLI.",
       "paths": [
         "skills/ito-compute",
         "skills/ito-inference",
@@ -1178,6 +1177,37 @@
       "defaultInstall": false,
       "cost": "heavy",
       "stability": "stable"
+    },
+    {
+      "id": "home-assistant-skills",
+      "kind": "skills",
+      "description": "Home Assistant best-practices skill for automations, scripts, helpers, dashboards, blueprints, backups, and safe refactoring (vendored from homeassistant-ai/skills, MIT).",
+      "paths": [
+        "skills/home-assistant-best-practices"
+      ],
+      "targets": [
+        "claude",
+        "claude-project",
+        "cursor",
+        "antigravity",
+        "codex",
+        "gemini",
+        "opencode",
+        "codebuddy",
+        "joycode",
+        "qwen",
+        "zed",
+        "hermes",
+        "openclaw",
+        "kimi",
+        "adal"
+      ],
+      "dependencies": [
+        "platform-configs"
+      ],
+      "defaultInstall": false,
+      "cost": "light",
+      "stability": "beta"
     }
   ]
 }
