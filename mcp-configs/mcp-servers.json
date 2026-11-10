@@ -168,6 +168,14 @@
       },
       "description": "Cloud browser sessions via Browserbase"
     },
+    "nanobanana": {
+      "type": "http",
+      "url": "https://nanobanana.mcp.acedata.cloud/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_ACEDATA_API_KEY_HERE"
+      },
+      "description": "NanoBanana image generation/editing via AceData cloud MCP. Auth requirement is unverified — if the server works key-free, remove the headers block."
+    },
     "browser-use": {
       "type": "http",
       "url": "https://api.browser-use.com/mcp",
