@@ -6,7 +6,10 @@
     },
     "nanobanana": {
       "type": "http",
-      "url": "https://nanobanana.mcp.acedata.cloud/mcp"
+      "url": "https://nanobanana.mcp.acedata.cloud/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ACEDATA_API_KEY}"
+      }
     }
   }
 }
